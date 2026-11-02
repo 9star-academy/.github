@@ -19,6 +19,22 @@
 
 ---
 
+## 开源项目
+
+目前从基础设施与运维开始，围绕 Linux 环境和日常维护构建实用工具。
+
+| 项目 | 主要实现语言 | 定位与核心能力 | 文档 |
+| :--- | :--- | :--- | :--- |
+| [**ShellReady**](https://github.com/9star-academy/ShellReady) | Bash / Shell | **Linux 环境初始化。**<br>配置 BBR、Zsh、trzsz-go、Starship、Atuin、zoxide 等组件，提供按需安装、状态检查与卸载。 | [使用文档 ↗](https://github.com/9star-academy/ShellReady#readme) |
+| [**secctl**](https://github.com/9star-academy/secctl) | Go | **Linux 安全管理。**<br>端口审计、SSH 加固与超时回滚、防火墙规则管理，以及 Docker IPv4 bridge 防护。 | [使用文档 ↗](https://github.com/9star-academy/secctl#readme) |
+| [**servctl**](https://github.com/9star-academy/servctl) | Go | **systemd 服务托管。**<br>为已有程序生成服务配置，支持开机自启、异常退出自动重启、启停管理与日志查看。 | [使用文档 ↗](https://github.com/9star-academy/servctl#readme) |
+| [**proxctl**](https://github.com/9star-academy/proxctl) | Go | **应用对外发布。**<br>反向代理、静态站点托管、自动 HTTPS、WebSocket 透传及规则热重载。 | [使用文档 ↗](https://github.com/9star-academy/proxctl#readme) |
+| [**bakctl**](https://github.com/9star-academy/bakctl) | Go | **文件与数据库备份。**<br>支持 SQLite、PostgreSQL、本地及 S3/R2 存储、可选加密、恢复与 Linux systemd 定时任务。 | [使用文档 ↗](https://github.com/9star-academy/bakctl#readme) |
+
+> 语言按工具主体实现标注；ShellReady 的 Python 代码主要用于自动化测试。支持环境、运行依赖与版本信息见各项目文档。
+
+---
+
 ## 🚀 裸机服务器标准交付流 (Workflow)
 
 从一台新开辟的空白 VPS 到生产可用，只需这套流水线：
@@ -35,20 +51,6 @@
                          └────────────────┘      └────────────────┘
                            定时加密备份至 R2/S3    反向代理与自动 HTTPS 证书
 ```
-
----
-
-## 开源项目
-
-目前从基础设施与运维开始，围绕 Linux 环境和日常维护构建实用工具。
-
-| 项目 | 解决什么问题 | 开始使用 |
-| :--- | :--- | :--- |
-| [**ShellReady**](https://github.com/9star-academy/ShellReady) | 配置 Linux 终端环境，减少重复准备工作 | [查看文档 ↗](https://github.com/9star-academy/ShellReady#readme) |
-| [**secctl**](https://github.com/9star-academy/secctl) | SSH 安全加固与防火墙管理 | [查看文档 ↗](https://github.com/9star-academy/secctl#readme) |
-| [**servctl**](https://github.com/9star-academy/servctl) | 将已有程序注册为 systemd 服务 | [查看文档 ↗](https://github.com/9star-academy/servctl#readme) |
-| [**proxctl**](https://github.com/9star-academy/proxctl) | 反向代理、静态站点托管与自动 HTTPS | [查看文档 ↗](https://github.com/9star-academy/proxctl#readme) |
-| [**bakctl**](https://github.com/9star-academy/bakctl) | 文件与数据库备份、恢复及定时任务 | [查看文档 ↗](https://github.com/9star-academy/bakctl#readme) |
 
 ---
 
